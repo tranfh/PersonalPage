@@ -1,0 +1,14 @@
+.about-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-paragraph {
+    padding: 50px;
+    text-align:left;
+}
+
+.about-container {
+    background-color: rgb(235, 235, 235);
+    padding: 80px;
+}

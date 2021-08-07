@@ -1,0 +1,112 @@
+
+
+body {
+    font-family: Karla, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing {
+    margin: 200px 100px 100px 200px;
+    padding: 10px;
+    width: 50%;
+}
+
+.intro {
+    font-family: Spacegrotesk, sans-serif;
+    color: darkgoldenrod;
+    font-weight: 700;
+}
+
+.intro-text {
+    max-width: 500px;
+    color: gainsboro;
+    text-align: justify;
+}
+
+.socialmedia {
+    display: table;
+    table-layout: fixed;
+    width: 50%;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+a.icon {
+    padding-right: 10px;
+    display: table-cell;
+    text-align: left;
+}
+
+img {
+    padding-bottom: 2px;
+}
+
+img:hover {
+    border-bottom: 1px solid goldenrod;
+}
+
+.typewriter {
+    display: inline;
+    margin-left: 10px;
+    color:darkgoldenrod; 
+}
+
+.typewriter::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid darkgoldenrod;
+    animation: blink 0.5s infinte ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  { 
+    .intro, .typewriter {
+        font-size: 20px;
+    } 
+    .landing {
+        margin-left: 80px;
+    }
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (min-width:481px)  { 
+    .intro, .typewriter {
+        font-size: 20px;
+    }
+    .landing {
+        margin-left: 100px;
+    }
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:641px)  { 
+    .intro, .typewriter {
+        font-size: 30px;
+    }
+    .landing {
+        margin-left: 200px;
+    }
+}
+@media (min-width:961px)  { 
+    .intro, .typewriter {
+        font-size: 40px;
+    }
+}
+
+@media (min-width:1190px)  { 
+    .intro, .typewriter {
+        font-size: 50px;
+    }
+}
