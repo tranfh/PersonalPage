@@ -1,0 +1,95 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  color: #e2dbdb;
+}
+
+hr {
+  color:#F05F44;
+  border-width: 5px;
+  max-width: 65px;
+  margin: 20px auto;
+  opacity: 1;
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.btn-primary {
+  background-color: #F05F44;
+  border-color: #F05F44;
+}
+
+.btn-primary:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 4px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.rw-words h1 {
+  opacity: 0;
+    overflow: hidden;
+    margin-top: 1rem;
+    -webkit-animation: rotateWord 12s linear infinite 0s;
+    -ms-animation: rotateWord 12s linear infinite 0s;
+    animation: rotateWord 12s linear infinite 0s;
+}
+.rw-words h1:nth-child(2) { 
+  -webkit-animation-delay: 3s; 
+  -ms-animation-delay: 3s; 
+  animation-delay: 3s; 
+}
+.rw-words h1:nth-child(3) { 
+  -webkit-animation-delay: 6s; 
+  -ms-animation-delay: 6s; 
+  animation-delay: 6s; 
+}
+
+.rw-words h1:nth-child(4) { 
+  -webkit-animation-delay: 9s; 
+  -ms-animation-delay: 9s; 
+  animation-delay: 9s; 
+}
+
+@-webkit-keyframes rotateWord {
+  0% { opacity: 0; -webkit-transform: translateX(0px); }
+  3% { opacity: 1; -webkit-transform: translateX(0px);}
+  21% { opacity: 1; -webkit-transform: translateX(0px); }
+  24% { opacity: 0; -webkit-transform: translateX(0px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+  0% { opacity: 0; -ms-transform: translateX(0px); }
+  3% { opacity: 1; -ms-transform: translateX(0px);}
+  21% { opacity: 1; -ms-transform: translateX(0px); }
+  24% { opacity: 0; -ms-transform: translateX(0px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes rotateWord {
+  0% { opacity: 0; -webkit-transform: translateX(0px); transform: translateX(0px); }
+  3% { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px);}
+  21% { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
+  24% { opacity: 0; -webkit-transform: translateX(00px); transform: translateX(0px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
